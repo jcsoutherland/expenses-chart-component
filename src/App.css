@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'DM Sans';
+  src: url(https://fonts.google.com/specimen/DM+Sans);
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(27, 66%, 92%);
+}

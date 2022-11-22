@@ -1,0 +1,97 @@
+.chart-container {
+  width: 30%;
+  .top-container {
+    background-color: hsl(10, 79%, 65%);
+    padding: 1.5rem 0px;
+    border-radius: 1.5rem;
+    width: 100%;
+    color: hsl(33, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    .balance-container {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 1.5rem;
+      .balance-header {
+        margin-bottom: 0.5rem;
+      }
+      .balance-number {
+        font-weight: 700;
+        font-size: 2rem;
+      }
+    }
+    .logo {
+      width: 8rem;
+      height: 3rem;
+      background-image: url('../../public/images/logo.svg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  .main-container {
+    height: 100%;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: hsl(33, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    .title-text {
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 0.05rem;
+    }
+    .graph-container {
+      height: 15rem;
+      width: 100%;
+    }
+    .hr-break {
+      width: 100%;
+      opacity: 40%;
+    }
+    .bottom-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .total-header-text {
+        opacity: 50%;
+        font-size: 0.75rem;
+      }
+      .total-container {
+        display: flex;
+        justify-content: space-between;
+        .money-count {
+          font-weight: 700;
+          font-size: 2.25rem;
+        }
+        .percent-container {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          .percent-number {
+            font-weight: 700;
+          }
+          .percent-subtext {
+            opacity: 50%;
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .chart-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .chart-container {
+    width: 90%;
+  }
+}
